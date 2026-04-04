@@ -7,4 +7,5 @@ python app.py
 
 ## Run with Docker
 docker build -t flaskapp .
+
 docker run -p 5000:5000 flaskapp
