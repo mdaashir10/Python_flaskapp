@@ -14,5 +14,5 @@ jobs:
           if [[ -z secrets.RENDER_DEPLOY_HOOK ]]; then
             exit 1
           else
-            curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
+            curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
           fi
